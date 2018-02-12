@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Customer Page</title>
+        <meta charset="utf-8"/>
+    </head>
+    <script src ="Customer.js"></script>
+    <body>
+        <script>
+            var customer = new Customer();
+            customer.name = "balamurugan";
+            customer.age = 2;
+            customer.address.street1 ="test";
+            alert(customer.add.street1);
+            customer.validate(2);
+
+            try{
+                var customernew = new NewCustomer();
+                customer.validate(33);
+            }
+            catch (ex ){
+                alert(ex);
+            }
+        
+        </script>
+    </body>
+</html>
